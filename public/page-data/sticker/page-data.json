@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-shopify-product-handle-js",
+    "path": "/sticker/",
+    "result": {"data":{"shopifyProduct":{"title":"Sticker","shopifyId":"gid://shopify/Product/7586511519963","handle":"sticker","descriptionHtml":"A dope sticker","priceRangeV2":{"maxVariantPrice":{"amount":"9.99","currencyCode":"USD"},"minVariantPrice":{"amount":"9.99","currencyCode":"USD"}},"images":[{"originalSrc":"https://cdn.shopify.com/s/files/1/0636/7212/3611/products/st_small_507x507-pad_600x600_f8f8f8.jpg?v=1647987869"}]}},"pageContext":{"id":"1eff3ea9-cab5-5819-bfd2-5755cedc0243","handle":"sticker","__params":{"handle":"sticker"}}},
+    "staticQueryHashes": []}
