@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { graphql } from "gatsby";
+import Layout from "../components/layout";
+import StoreContext from "../context/store-context";
 
-const ProductPage = ({ data }) => {
+const Product = ({ data }) => {
+  const { addVariantToCart } = useContext(StoreContext);
   return (
     <div>
       <h2>{data.shopifyProduct.title}</h2>
@@ -20,7 +23,16 @@ const ProductPage = ({ data }) => {
         {data.shopifyProduct.priceRangeV2.maxVariantPrice.currencyCode}{" "}
         {data.shopifyProduct.priceRangeV2.maxVariantPrice.amount}
       </span>
+      <button onClick={() => addVariantToCart()}>Add to Cart</button>
     </div>
+  );
+};
+
+const ProductPage = ({ data }) => {
+  return (
+    <Layout>
+      <Product data={data} />
+    </Layout>
   );
 };
 
